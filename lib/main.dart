@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
               //insetPadding: EdgeInsets.symmetric(horizontal: 10),
               content: Padding(
                 padding: const EdgeInsets.all(12.0),
-                child: ListScreen(),
+                child: UsersScreen(),
               ),
 
               //     Container(
@@ -118,7 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
           return Dialog(
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(50.0)),
-            child: ListScreen(),
+            child: UsersScreen(),
             // child: SingleChildScrollView(
             //   child: Padding(
             //     padding: const EdgeInsets.all(12.0),
