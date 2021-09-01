@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:statefuldialogs/data/model/User.dart';
@@ -7,6 +6,7 @@ class UserDataNotifier extends ChangeNotifier {
   UserDataNotifier() {
     fetchData();
   }
+
   List<User> get filterData => _filterData;
   set filterData(List<User> users) {
     _filterData = users;

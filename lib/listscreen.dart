@@ -9,17 +9,7 @@ import 'package:statefuldialogs/utils/Colors.dart';
 import 'package:statefuldialogs/widget/AppUtiles.dart';
 import 'package:statefuldialogs/widget/BoxDecorationShadowCircle.dart';
 
-class UsersScreen extends StatefulWidget {
-  @override
-  _UsersScreenState createState() => _UsersScreenState();
-}
-
-class _UsersScreenState extends State<UsersScreen> {
-  @override
-  void initState() {
-    super.initState();
-  }
-
+class UsersScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

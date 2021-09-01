@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:statefuldialogs/linqScreen/linqScreen.dart';
 import 'package:statefuldialogs/listscreen.dart';
 
 void main() {
@@ -161,17 +162,33 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text("Stateful Dialog"),
       ),
       body: Container(
-        child: Center(
-          child: FlatButton(
-              color: Colors.deepOrange,
-              onPressed: () async {
-                //await showInformationDialog(context);
-                await showInformationDialogg(context);
-              },
-              child: Text(
-                "Stateful Dialog",
-                style: TextStyle(color: Colors.white, fontSize: 16),
-              )),
+        width: double.infinity,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            FlatButton(
+                color: Colors.deepOrange,
+                onPressed: () async {
+                  //await showInformationDialog(context);
+                  await showInformationDialogg(context);
+                },
+                child: Text(
+                  "Stateful Dialog",
+                  style: TextStyle(color: Colors.white, fontSize: 16),
+                )),
+            SizedBox(height: 20.0),
+            FlatButton(
+                color: Colors.deepOrange,
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => LinqScreen()));
+                },
+                child: Text(
+                  "Dart LINQ",
+                  style: TextStyle(color: Colors.white, fontSize: 16),
+                )),
+          ],
         ),
       ),
     );

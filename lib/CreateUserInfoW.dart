@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:statefuldialogs/data/model/User.dart';
 import 'package:statefuldialogs/widget/BoxDecorationShadowCircle.dart';
 
 class CreateUserInfo extends StatefulWidget {
@@ -11,8 +10,6 @@ class CreateUserInfo extends StatefulWidget {
 }
 
 class _CreateUserInfoState extends State<CreateUserInfo> {
-  User? user;
-
   @override
   void initState() {
     super.initState();
